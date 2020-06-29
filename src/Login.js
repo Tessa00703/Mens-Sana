@@ -81,7 +81,9 @@ export default (
                     loginUrl="/login"
                     callbackUrl="/authentication"
                     senderEmail={SENDER_EMAIL}
-                    getSubject={(recipient: string) => `Confirm Your Mail-Address`}
+                    getSubject={(recipient: string) => {
+                        return `Confirm Your Mail-Address`;
+                    }}
                     getHtmlText={(recipient: string, url: string) => {
                         return `Hello ${recipient},<br/>
 Please verify your e-mail address by following <a href="${url}">this link</a></p>`
