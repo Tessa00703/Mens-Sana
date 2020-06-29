@@ -18,7 +18,7 @@ import {
     withRequest
 } from "infrastructure-components";
 
-const SENDER_EMAIL = "mail@react-architect.com";
+const SENDER_EMAIL = "bt.asbai@gmail.com";
 
 const LoginPage = withIsomorphicState(withRequest(withAuthCallback(({useIsomorphicState, request, authCallback, ...props}) => {
 
