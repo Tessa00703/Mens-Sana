@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Card, CardWrapper } from "react-swipeable-cards";
 import "./styles.css";
 
