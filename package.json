@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@babel/polyfill": "^7.10.1",
     "@material-ui/core": "4.10.2",
     "@material-ui/icons": "4.9.1",
     "infrastructure-components": "^0.3.11",
