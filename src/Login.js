@@ -84,10 +84,8 @@ export default (
                     getSubject={(recipient: string) => {
                         return `Confirm Your Mail-Address`;
                     }}
-                    getHtmlText={(recipient: string, url: string) => {
-                        return `Hello ${recipient},<br/>
-Please verify your e-mail address by following <a href="${url}">this link</a></p>`
-                }}>
+                    getHtmlText={(recipient: string, url: string) => `Hello ${recipient},<br/>
+Please verify your e-mail address by following <a href="${url}">this link</a></p>`}>
                     <WebApp id="main" path="*" method="GET">
                         <SecuredRoute path='/secret' name='Secret' render={()=><SecretPage />} />
                         <Route path='/login' name='Login' render={()=><LoginPage />} />
