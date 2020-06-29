@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Switch, useHistory } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import MyCardWrapper from "./MyCardWrapper";
 import CreateCard from "./CreateCard";
 import BottomNav from "./BottomNav";
@@ -29,7 +29,7 @@ const App = () => {
   return (
     <>
       <Switch>
-      <AuthButton />
+     
         <Route path="/cards">
           <MyCardWrapper cardContent={cardContent} />
         </Route>
@@ -47,34 +47,6 @@ const App = () => {
   )
 }
 
-const fakeAuth = {
-  isAuthenticated: false,
-  authenticate(cb) {
-    fakeAuth.isAuthenticated = true;
-    setTimeout(cb, 100); // fake async
-  },
-  signout(cb) {
-    fakeAuth.isAuthenticated = false;
-    setTimeout(cb, 100);
-  }
-};
 
-function AuthButton() {
-  let history = useHistory();
-
-  return fakeAuth.isAuthenticated ? (
-    <p>
-      Welcome!{" "}
-      <button onClick={() => {
-          fakeAuth.signout(() => history.push("/"));
-          }}>Sign out</button>
-    </p>
-  ) : (
-    <p>You are not logged in.</p>
-  );
-
-
-
-};
 
 export default App
