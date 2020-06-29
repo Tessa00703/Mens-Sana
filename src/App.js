@@ -34,10 +34,14 @@ const App = () => {
         <Route path="/newCard">
           <CreateCard setCardContent={setCardContent} />
         </Route>
+        <Route path="/login"></Route>
+        <Route path="/home"></Route>
       </Switch>
       <BottomNav />
     </>
   );
 };
+
+
 
 export default App;
