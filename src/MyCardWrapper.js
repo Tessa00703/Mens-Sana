@@ -15,7 +15,7 @@ const wrapperStyle = {
 const cardStyleOne = {
   backgroundColor: "#00000",
   fontFamily: "sans-serif",
-  //textAlign: "center",
+  textAlign: "center",
   Border: "10px solid #e7e7e7",
   borderRadius: "15px",
   Overflow: "hidden",
@@ -25,6 +25,7 @@ const cardStyleOne = {
 
 const cardStyleTwo = {
   backgroundColor: "#024773",
+  backgroundImage: "./src/img/1.jpg",
   fontFamily: "sans-serif",
   textAlign: "center",
   display: "inline-block",
