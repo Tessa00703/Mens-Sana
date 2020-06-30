@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import MyCardWrapper from "./MyCardWrapper";
 import CreateCard from "./CreateCard";
 import BottomNav from "./BottomNav";
-import LoginPage from "./Login";
+
 
 
 const App = () => {
@@ -38,7 +38,7 @@ const App = () => {
           <CreateCard setCardContent={setCardContent} />
         </Route>
         <Route path="/login">
-         <LoginPage/>
+      
         </Route>
         <Route path="/home">
         </Route>
