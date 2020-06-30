@@ -6,7 +6,7 @@ const wrapperStyle = {
   backgroundColor: "#024773",
   fontFamily: "sans-serif",
   padding: "50px 50px",
-  border: "10px solid Blue",
+  border: "10px solid",
   textAlign: "center",
   lineHeight: "1.5"
   //display: "inline-block",
