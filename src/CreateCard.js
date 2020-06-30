@@ -10,7 +10,7 @@ const CreateCard = ({ setCardContent }) => {
   return (
     <div>
       <TextField
-        style={{ width: "300px" }}
+        style={{ width: "500px" }}
         id="new-card-creation"
         label="Standard"
         onChange={handleChange}
