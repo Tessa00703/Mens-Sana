@@ -7,7 +7,7 @@ const wrapperStyle = {
   fontFamily: "sans-serif",
   padding: "50px 50px",
   border: "10px solid",
-  textAlign: "center",
+  textAlign: "cover",
   lineHeight: "1.5"
   //display: "inline-block",
   //verticalAlign: "middle"
